@@ -1,6 +1,6 @@
 variable "region" {
   type = string
-  default = "us-east-1d"
+  default = "us-east-1"
 }
 
 variable "ami" {
@@ -20,5 +20,5 @@ variable "subnet_1_cidr" {
 
 variable "subnet_az" {
   type = string
-  default = "us-east-1d"
+  default = "us-east-1e"
 }
