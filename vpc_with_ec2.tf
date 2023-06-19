@@ -17,9 +17,7 @@ resource "aws_vpc" "demo-vpc" {
 //create subnet
 resource "aws_subnet" "demo-subnet" {
   vpc_id     = aws_vpc.demo-vpc.id
-  cidr_block = var.subnet_1_cidr
-  map_public_ip_on_launch = true
-  availability_zone = var.subnet_1_cidr
+  cidr_block = "10.0.1.0/24"
 
   tags = {
     Name = "demo-subnet"
