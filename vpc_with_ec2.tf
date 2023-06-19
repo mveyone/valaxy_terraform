@@ -6,6 +6,7 @@ resource "aws_instance" "Ubuntu" {
         Name = "ec2_instance"
     }
     subnet_id = aws_subnet.demo-subnet.id
+    associate_public_ip_address = true
     vpc_security_group_ids = [aws_security_group.demo-vpc-sg.id]
 }
 
